@@ -8,16 +8,6 @@ const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789абвгдезийклм
 const translations = ["KYMYU", "КЫМЮ", "凯穆", "كيميو", "ΚΥΜΥΥ", "キミュ"];
 const fontSize = 16;
 const columns = canvas.width / fontSize;
-const canvas = document.getElementById('matrixCanvas');
-const ctx = canvas.getContext('2d');
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789абвгдезийклмнопрстуфхцчшщыюяΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩあいうえおかきくけこさしすせそ中国的一些字 العربية";
-const translations = ["KYMYU", "КЫМЮ", "凯穆", "كيميو", "ΚΥΜΥΥ", "キミュ"];
-const fontSize = 16;
-const columns = canvas.width / fontSize;
 
 const drops = [];
 for (let i = 0; i < columns; i++) {
@@ -77,4 +67,5 @@ function draw() {
 }
 
 setInterval(draw, 10);
+
 

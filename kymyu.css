@@ -6,5 +6,10 @@ body {
 }
 
 canvas {
-    display: block;
+    display: block; /* Asegura que el canvas se ajuste a la pantalla */
+    position: absolute; /* Permite que el canvas se extienda sin restricciones */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupa el ancho completo de la ventana */
+    height: 100vh; /* Ocupa el alto completo de la ventana */
 }
